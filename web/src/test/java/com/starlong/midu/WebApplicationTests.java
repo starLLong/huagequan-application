@@ -1,4 +1,4 @@
-package com.starlong.midu.web;
+package com.starlong.midu;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

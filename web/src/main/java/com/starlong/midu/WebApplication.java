@@ -1,4 +1,4 @@
-package com.starlong.midu.web;
+package com.starlong.midu;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
