@@ -1,11 +1,9 @@
 package com.starlong.midu.interfaces.controller;
 
 import com.starlong.midu.application.LoginApplication;
+import com.starlong.midu.infrastructure.Result;
 import jakarta.annotation.Resource;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 
 @RequestMapping("/test")
@@ -18,5 +16,12 @@ public class LoginController {
     public int test(){
         int test = loginApplication.test();
         return test;
+    }
+
+    @PostMapping("/login")
+    public Result login(@RequestParam String username, @RequestParam String password) {
+
+        Result result = new Result();
+        return result;
     }
 }
